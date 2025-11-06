@@ -94,6 +94,7 @@
 
 .tentang-box .fananda {
   font-weight: bold;
+  color: #eab208;
 }
 
 /* collaborations */
@@ -114,10 +115,19 @@
 .collabolator .box-vousa img {
   height: 120px;
   border-radius: 100px;
+   transition: 0.3s;
 }
 
 .collabolator .box-vousa img {
   border: 5px solid black;
+}
+
+.collabolator .box img:hover{
+  transform: scale(1.1);
+}
+
+.collabolator .box-vousa img:hover{
+  transform: scale(1.1);
 }
 
 /* detail */
@@ -135,6 +145,7 @@
 .detail .box{
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+   transition: 0.3s;
 }
 
 .detail .box img{
@@ -146,6 +157,10 @@
 .detail .box .desc{
   padding: 20px;
 }
+
+.detail .box:hover {
+      transform: translateY(-8px);
+    }
 
 /* Responsive */
 
