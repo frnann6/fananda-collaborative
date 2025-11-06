@@ -184,6 +184,10 @@
   .collabolator .box-vousa img {
     height: 200px;
   }
+
+  .detail{
+    gap: 30px;
+  }
 }
 
 /* max-width: 642px (Mid Phone) */
