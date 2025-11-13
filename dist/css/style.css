@@ -38,7 +38,7 @@
 }
 
 .hero-box {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/hero.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/images/black.jpg);
   width: 100%;
   border-radius: 25px;
   padding: 100px 20px;
@@ -190,6 +190,48 @@
 .detail .box:hover {
       transform: translateY(-8px);
     }
+
+/* Footer */
+.footer{
+  margin-top: 150px;
+  background-color: rgb(29, 29, 29);
+}
+
+.footer .copyright{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .text-fananda,
+.footer .text-dhevv,
+.footer .text-lafern,
+.footer .text-vousa
+{
+  color: rgba(255, 255, 255, 0.500);
+  transition: 0.3s ease;
+}
+
+.footer .text-fananda:hover{
+  color: #eab208;
+}
+
+.footer .text-dhevv:hover{
+  color: red;
+}
+
+.footer .text-lafern:hover{
+  color: rgb(0, 89, 255);
+}
+
+.footer .text-vousa:hover{
+  color: white;
+}
+
+.footer a:hover i {
+  color: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4); 
+  transform: scale(1.2);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
 
 /* Responsive */
 
