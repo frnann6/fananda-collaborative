@@ -265,6 +265,11 @@
   .hero-box p {
     width: 100%;
   }
+
+  .tentang-box .box p{
+    width: 95%;
+    margin-inline: auto ;
+  }
 }
 
 /* max-width: 475px (Small Phone) */
