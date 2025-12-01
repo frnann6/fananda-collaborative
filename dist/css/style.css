@@ -191,6 +191,45 @@
       transform: translateY(-8px);
     }
 
+/* Profile */
+.text-profile{
+  margin-bottom: 100px;
+}
+
+#profile .one img,
+#profile .two img,
+#profile .three img
+{
+  height: 300px;
+  border-radius: 150px;
+  transition: 0.3s;
+}
+
+#profile .one img:hover,
+#profile .two img:hover,
+#profile .three img:hover{
+  transform: translateY(-7px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.863);
+}
+
+#profile .three img{
+  border: 5px solid black;
+}
+
+#profile .border-bottom{
+  width: 300px;
+}
+
+#profile .ig-icons{
+  color: black;
+}
+
+#profile .ig-icons:hover{
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
 /* Footer */
 .footer{
   margin-top: 150px;
@@ -292,6 +331,11 @@
   .hero-box .button{
     margin-left: 0;
     justify-content: center;
+  }
+
+  /* profile */
+  .text-profile{
+    text-align: center;
   }
 }
 
