@@ -98,7 +98,6 @@
 .tentang-box img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
   transition: 0.3s;
 }
 
@@ -119,6 +118,17 @@
 .tentang-box .fananda {
   font-weight: bold;
   color: #eab208;
+}
+
+#carouselExampleControls .carousel-inner {
+  border-radius: 20px;
+  /* bebas ubah */
+  overflow: hidden;
+  /* WAJIB supaya gambar ikut melengkung */
+}
+
+.carousel-control-prev{
+  border-radius: 20px;
 }
 
 /* collaborations */
@@ -208,7 +218,7 @@
 #profile .one img:hover,
 #profile .two img:hover,
 #profile .three img:hover{
-  transform: translateY(-7px);
+  transform: translateY(-8px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.863);
 }
 
