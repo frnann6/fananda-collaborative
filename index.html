@@ -27,7 +27,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="dist/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -68,8 +68,8 @@
   <div class="hero">
     <div class="container">
       <div class="hero-box">
-        <h1>Selamat Datang di <br> Fananda.</h1>
-        <p>Fananda adalah ruang bagi ide, kolaborasi, dan semangat untuk mencipta tanpa batas.</p>
+        <h1 id="welcome"></h1>
+        <p id="hero_paragraf"></p>
         <div class="button flex-column flex-sm-row">
           <a href="#collaborations" class="btn btn-warning fw-bold lihat-collabolator rounded-pill">Lihat
             Collabolator</a>
@@ -96,14 +96,7 @@
               <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button> -->
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/images/startup.jpg" alt="about-img.jpg">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/images/startup-2.jpg" alt="about-img.jpg">
-              </div>
-            </div>
+            <div class="carousel-inner" id="carousel"></div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
               data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="false"></span>
@@ -119,15 +112,7 @@
 
         <div class="box">
           <h1 class="fw-semibold">About Us</h1>
-          <p>Semua berawal dari 3 pelajar yang memiliki satu impian sederhana, menciptakan sesuatu yang bermakna. Dari
-            ruangan kecil yang penuh ide, kopi dingin yang tak pernah habis dan malam - malam panjang tanpa tidur,
-            lahirlah
-            sebuah gagasan sebuah toko online yang bukan sekedar tempat berbelanja, melainkan wujud dari semangat,
-            keberanian dan mimpi, terciptalah <span class="fananda">Fananda</span>. Toko online ataupun bisnis digital,
-            <span class="fananda">Fananda</span> menyajikan kelezatan
-            yang tak
-            terlupakan. <span class="fw-bold"></span>
-          </p>
+          <p id="about_paragraf"></p>
         </div>
       </div>
     </div>
@@ -138,46 +123,8 @@
   <div id="collaborations">
     <div class="container ">
       <h1 class="fw-semibold">Collaborations</h1>
-      <div class="collabolator">
-        <div class="box-dhevv text-center">
-          <img src="assets/icon/dhevv.png" alt="">
-          <h5 class="fw-semibold mt-4">Dhevv Label</h5>
-        </div>
-        <div class="box-lafern text-center">
-          <img src="assets/icon/lafern.jpeg" alt="">
-          <h5 class="fw-semibold mt-4">Lafern collective</h5>
-        </div>
-        <div class="box-vousa text-center">
-          <img src="assets/icon/vousa.png" alt="">
-          <h5 class="fw-semibold mt-4">Vousa Official</h5>
-        </div>
-      </div>
-      <div class="detail">
-        <div class="box">
-          <img src="assets/products/dhevv-product.png" alt="">
-          <div class="desc">
-            <h2>Fashion</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, nostrum quo? Nam, eveniet iure obcaecati
-              voluptate ducimus illum minima! Voluptatum.</p>
-          </div>
-        </div>
-        <div class="box">
-          <img src="assets/products/dhevv-product.png" alt="">
-          <div class="desc">
-            <h2>Aksesori</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, nostrum quo? Nam, eveniet iure obcaecati
-              voluptate ducimus illum minima! Voluptatum.</p>
-          </div>
-        </div>
-        <div class="box">
-          <img src="assets/products/dhevv-product.png" alt="">
-          <div class="desc">
-            <h2>Parfum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, nostrum quo? Nam, eveniet iure obcaecati
-              voluptate ducimus illum minima! Voluptatum.</p>
-          </div>
-        </div>
-      </div>
+      <div class="collabolator" id="collab"></div>
+      <div class="detail" id="detail"></div>
     </div>
   </div>
   <!-- End Collaborations -->
@@ -186,37 +133,7 @@
   <div id="profile">
     <div class="container">
       <h1 class="fw-semibold text-profile mt-5">Profile</h1>
-      <div class="row text-center gap-5 p">
-        <div class="col one">
-          <img src="assets/icon/dhevv.png" alt="">
-          <h3 class="mt-3 border-2 border-bottom mx-auto">Daffa Ramdhani</h3>
-          <div class="d-flex justify-content-center gap-3 mt-3">
-            <a href="http://instagram.com/dffa_rmdhni" target="_blank" class="ig-icons">
-              <h3><i class="bi bi-instagram"></i></h3>
-            </a>
-            <h3><i class="bi bi-linkedin"></i></h3>
-          </div>
-        </div>
-        <div class="col two">
-          <img src="assets/icon/lafern.jpeg" alt="">
-          <h3 class="mt-3 border-2 border-bottom mx-auto">Fernanda Dwi c</h3>
-          <div class="d-flex justify-content-center gap-3 mt-3">
-            <a href="http://instagram.com/frnann6" target="_blank" class="ig-icons">
-              <h3><i class="bi bi-instagram"></i></h3>
-            </a>
-            <h3><i class="bi bi-linkedin"></i></h3>
-          </div>
-        </div>
-        <div class="col three">
-          <img src="assets/icon/vousa.png" alt="">
-          <h3 class="mt-3 border-2 border-bottom mx-auto">M.Fasya Ishaq</h3>
-          <div class="d-flex justify-content-center gap-3 mt-3">
-            <a href="http://instagram.com/planetafsy" target="_blank" class="ig-icons">
-              <h3><i class="bi bi-instagram"></i></h3>
-            </a>
-            <h3><i class="bi bi-linkedin"></i></h3>
-          </div>
-        </div>
+      <div class="row text-center gap-5 p" id="page">
       </div>
     </div>
   </div>
@@ -266,7 +183,7 @@
   <!-- End Footer -->
 
   <!-- js -->
-  <script src="dist/js/script.js"></script>
+  <script type="module" src="js/main.js"></script>
 
   <!-- bootstrap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
