@@ -217,12 +217,14 @@
 
 #profile .ig-icons{
   color: black;
+  transition: 0.3s ease;
 }
 
 #profile .ig-icons:hover{
   background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    transform: scale(1.1);
 }
 
 /* Footer */
