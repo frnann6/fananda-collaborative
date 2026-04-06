@@ -38,14 +38,27 @@ const products = [
 
 const detail = document.getElementById("detail");
 
-products.forEach((product) => {
+products.forEach((product, index) => {
   detail.innerHTML += `
     <div class="box">
-        <img src="${product.img}" alt="">
+        <img src="${product.img}" alt="" data-index="${index}" style="cursor: pointer;">
         <div class="desc">
             <h2>${product.name}</h2>
             <p>${product.desc}</p>
         </div>
     </div>
     `;
+});
+
+// Add click event to product images
+document.querySelectorAll('.detail .box img').forEach(img => {
+  img.addEventListener('click', function() {
+    const index = this.getAttribute('data-index');
+    const product = products[index];
+    document.getElementById('modalImg').src = product.img;
+    document.getElementById('modalName').textContent = product.name;
+    document.getElementById('modalDesc').textContent = product.desc;
+    const modal = new bootstrap.Modal(document.getElementById('productModal'));
+    modal.show();
+  });
 });

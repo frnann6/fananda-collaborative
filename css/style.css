@@ -11,6 +11,18 @@ body {
     /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
 }
 
+.bg-tes{
+  background-color: rgb(233, 233, 233);
+}
+
+.bg-blur{
+      background: rgba(255, 255, 255, 0.17);
+        /* background: rgba(255, 255, 255, 0.3); */
+        /* semi transparan */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(16px);
+}
+
 .bg-aqua{
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
