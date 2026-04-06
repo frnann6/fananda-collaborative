@@ -25,9 +25,9 @@ const products = [
     img: "assets/products/dhevv-product.png",
   },
   {
-    name: "Aksesori",
+    name: "Fashion",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, nostrum quo? Nam, eveniet iure obcaecati voluptate ducimus illum minima! Voluptatum.",
-    img: "assets/products/dhevv-product.png",
+    img: "assets/products/lafern-product.png",
   },
   {
     name: "Parfum",

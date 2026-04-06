@@ -6,6 +6,15 @@
   font-family: "Poppins", serif;
 }
 
+body {
+    background-color: rgb(233, 233, 233);
+    /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+}
+
+.bg-aqua{
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
 .container {
   width: 80%;
   margin-inline: auto;
@@ -200,6 +209,7 @@
   height: 300px;
   border-radius: 150px;
   transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.671);
 }
 
 #profile .profile img:hover{
@@ -284,6 +294,17 @@
   .tentang .tentang-box{
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+/* max-width: 991px */
+@media (max-width: 991px) {
+  .navbar-nav{
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-link{
+    margin-top: 10px;
   }
 }
 
