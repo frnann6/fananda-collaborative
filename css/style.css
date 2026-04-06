@@ -110,9 +110,9 @@ body {
   transition: 0.3s;
 }
 
-.tentang-box img:hover{
+/* .tentang-box img:hover{
   transform: translateY(-5px);
-}
+} */
 
 .tentang-box h1 {
   font-size: 40px;

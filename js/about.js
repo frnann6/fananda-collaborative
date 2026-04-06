@@ -1,8 +1,7 @@
 // tentang kami / About us
 
-document.getElementById(
-  "about_paragraf"
-).innerHTML = `Semua berawal dari 3 pelajar yang memiliki satu impian sederhana, menciptakan sesuatu yang bermakna. Dari ruangan kecil yang penuh ide, kopi dingin yang tak pernah habis dan malam - malam panjang tanpa tidur, lahirlah sebuah gagasan sebuah toko online yang bukan sekedar tempat berbelanja, melainkan wujud dari semangat, keberanian dan mimpi, terciptalah <span class="fananda">Fananda</span>.Toko online ataupun bisnis digital, <span class="fananda">Fananda</span> menyajikan kelezatan yang tak terlupakan. <span class="fw-bold"></span>`;
+document.getElementById("about_paragraf").innerHTML =
+  `Kami berawal dari tiga pelajar dengan satu impian sederhana: menciptakan sesuatu yang bermakna. Dari ruangan kecil yang dipenuhi ide dan malam-malam panjang tanpa tidur, lahirlah Fananda. <br><br> Fananda adalah platform digital yang menghadirkan produk berkualitas serta pengalaman berbelanja yang berkesan. Kami menggabungkan kreativitas, kolaborasi, dan semangat untuk menciptakan sesuatu yang berbeda.`;
 
 const picts = [
   { img: "assets/images/startup.jpg" },
