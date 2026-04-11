@@ -21,18 +21,24 @@ collabolators.forEach((collabolator, index) => {
 const products = [
   {
     name: "Fashion",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, nostrum quo? Nam, eveniet iure obcaecati voluptate ducimus illum minima! Voluptatum.",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     img: "assets/products/dhevv-product.png",
+    price: "Rp 135.000",
+    price_cuts: "Rp 200.000",
   },
   {
     name: "Fashion",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, nostrum quo? Nam, eveniet iure obcaecati voluptate ducimus illum minima! Voluptatum.",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     img: "assets/products/lafern-product.png",
+    price: "Rp 100.000",
+    price_cuts: "Rp 180.000",
   },
   {
-    name: "Fashion",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, nostrum quo? Nam, eveniet iure obcaecati voluptate ducimus illum minima! Voluptatum.",
-    img: "assets/products/dhevv-product.png",
+    name: "Parfume",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    img: "assets/products/vousaparfume.png",
+    price: "Rp 115.000",
+    price_cuts: "Rp 200.000",
   },
 ];
 
@@ -45,20 +51,23 @@ products.forEach((product, index) => {
         <div class="desc">
             <h2>${product.name}</h2>
             <p>${product.desc}</p>
+            <h5 class="text-black coret">${product.price_cuts}</h5>
+            <h5 class="text-danger mt-3">${product.price}</h5>
         </div>
     </div>
     `;
 });
 
 // Add click event to product images
-document.querySelectorAll('.detail .box img').forEach(img => {
-  img.addEventListener('click', function() {
-    const index = this.getAttribute('data-index');
+document.querySelectorAll(".detail .box img").forEach((img) => {
+  img.addEventListener("click", function () {
+    const index = this.getAttribute("data-index");
     const product = products[index];
-    document.getElementById('modalImg').src = product.img;
-    document.getElementById('modalName').textContent = product.name;
-    document.getElementById('modalDesc').textContent = product.desc;
-    const modal = new bootstrap.Modal(document.getElementById('productModal'));
+    document.getElementById("modalImg").src = product.img;
+    document.getElementById("modalName").textContent = product.name;
+    document.getElementById("modalDesc").textContent = product.desc;
+    document.getElementById("modalPrice").textContent = product.price;
+    const modal = new bootstrap.Modal(document.getElementById("productModal"));
     modal.show();
   });
 });

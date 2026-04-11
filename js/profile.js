@@ -7,12 +7,12 @@ const profiles = [
   },
   {
     name: "Fernanda Dwi C",
-    img: "assets/profileimg/fernanda.png",
+    img: "assets/profileimg/pp.jpg",
     ig_url: "http://instagram.com/frnann6",
   },
   {
     name: "M.Fasya Ishaq",
-    img: "assets/profileimg/fasya.jpeg",
+    img: "assets/profileimg/pp.jpg",
     ig_url: "http://instagram.com/planetafsy",
   },
 ];

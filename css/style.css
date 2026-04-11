@@ -153,6 +153,10 @@ body {
 }
 
 /* collaborations */
+.coret {
+  text-decoration: line-through;
+}
+
 #collaborations {
   margin-top: 150px;
 }
